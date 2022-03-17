@@ -17,10 +17,12 @@
 | Total          |           | 100           |  |  |  |  |
 
 # Badges 
-Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/SaiWunnaAung/SET09623_DevOps-Group-4-/A%20workflow%20for%20my%20Group4%20App/master)
+Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/master)
 
-License [![LICENSE](https://img.shields.io/github/license/SaiWunnaAung/sem.svg?style=flat-square)](https://github.com/SaiWunnaAung/SET09623_DevOps-Group-4-/blob/master/LICENSE)
+Develop Build Status ![GitHub Workflow Status (develop)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/develop)
 
-Release [![Releases](https://img.shields.io/github/release/SaiWunnaAung/SET09623_DevOps-Group-4-/all.svg?style=flat-square)](https://github.com/SaiWunnaAung/SET09623_DevOps-Group-4-/releases)
+License [![LICENSE](https://img.shields.io/github/license/SaiWunnaAung/group4.svg?style=flat-square)](https://github.com/SaiWunnaAung/group4/blob/master/LICENSE)
 
-Code of Conduct [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SaiWunnaAung/SET09623_DevOps-Group-4-/blob/master/CODE_OF_CONDUCT.md)
+Release [![Releases](https://img.shields.io/github/release/SaiWunnaAung/group4/all.svg?style=flat-square)](https://github.com/SaiWunnaAung/group4/releases)
+
+Code of Conduct [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SaiWunnaAung/group4/blob/master/CODE_OF_CONDUCT.md)
