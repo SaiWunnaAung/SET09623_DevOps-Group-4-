@@ -1,10 +1,10 @@
-# population Use Case 2 Produce the population of people, people living in cities, and people not living in cities in each region.
+# population Use Case 3 Produce the population of people, people living in cities, and people not living in cities in each country.
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a client I want to produce a report which display the population of people, people living in cities, and people not living in cities in each region.* so that *I can easily find population.*
+As a client I want to produce a report which display the population of people, people living in cities, and people not living in cities in each country.* so that *I can easily find population.*
 
 ### Scope
 
@@ -36,7 +36,7 @@ A request for world population is sent to client.
 
 ## MAIN SUCCESS SCENARIO
 
-1. Information for cities population in each region is requested.
+1. Information for cities population in each country is requested.
 2. Database creates a report ordering all world by population.
 3. Client provides report requested.
 
@@ -50,4 +50,4 @@ None.
 
 ## SCHEDULE
 
-**DUE DATE**: Release 3.0
+**DUE DATE**: Release 5.0
