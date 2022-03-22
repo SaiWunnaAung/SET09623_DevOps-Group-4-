@@ -1,10 +1,10 @@
-# City Use Case 2 Produce all the cities in a continent organised by largest population to smallest.
+# City Use Case 4 Produce all the cities in a country organised by largest population to smallest.
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a client I want to produce a report which display all the cities in a continent organised by largest population to smallest.* so that *I can easily find population.*
+As a client I want to produce a report which display all the cities in a country organised by largest population to smallest.* so that *I can easily find population.*
 
 ### Scope
 
@@ -36,7 +36,7 @@ A request for world population is sent to client.
 
 ## MAIN SUCCESS SCENARIO
 
-1. Information for city population largest to smallest in a continent is requested.
+1. Information for city population largest to smallest in a country is requested.
 2. Database creates a report ordering all world by population.
 3. Client provides report requested.
 
@@ -50,4 +50,4 @@ None.
 
 ## SCHEDULE
 
-**DUE DATE**: Release 2.0
+**DUE DATE**: Release 3.0

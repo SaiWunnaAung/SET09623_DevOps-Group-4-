@@ -1,4 +1,4 @@
-# City Use Case 1 Produce all the cities in a region organised by largest population to smallest.
+# City Use Case 3 Produce all the cities in a region organised by largest population to smallest.
 
 ## CHARACTERISTIC INFORMATION
 
