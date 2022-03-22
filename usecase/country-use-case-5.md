@@ -36,7 +36,7 @@ A request for world population is sent to client.
 
 ## MAIN SUCCESS SCENARIO
 
-1. Information for populated country in a continent is requested.
+1. Information for top populated country in a continent is requested.
 2. Database creates a report ordering all world by population.
 3. Client provides report requested.
 
