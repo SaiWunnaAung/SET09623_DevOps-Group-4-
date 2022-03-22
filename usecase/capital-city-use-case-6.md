@@ -37,7 +37,7 @@ A request for world population is sent to client.
 ## MAIN SUCCESS SCENARIO
 
 1. Information for the top N populated capital cities in a region is requested.
-2. Database creates a report ordering all world by population.
+2. Database creates a report ordering all region by population.
 3. Client provides report requested.
 
 ## EXTENSIONS
