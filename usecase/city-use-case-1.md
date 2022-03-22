@@ -36,7 +36,7 @@ A request for world population is sent to client.
 
 ## MAIN SUCCESS SCENARIO
 
-1. Information for city population largest to smallest.
+1. Information for city population largest to smallest is requested.
 2. Database creates a report ordering all world by population.
 3. Client provides report requested.
 
