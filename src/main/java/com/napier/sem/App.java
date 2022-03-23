@@ -72,8 +72,8 @@ public class App
             for(int i=0; i<reportNo.length;i++){
                 System.out.println(reportNo[i]);
             }
-        System.out.println("Choose Report Number: 1");
-            chooseMenu(1);
+        System.out.println("Choose Report Number: 2");
+            chooseMenu(2);
 
     }
 
