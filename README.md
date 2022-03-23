@@ -11,12 +11,12 @@
 # Team assessment point
 | Member Name    |Matric No      | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 | Final Deliverable |
 |----------------|------|---------------|---------------|---------------|---------------|-------------------|
-| Sai Wanna Aung |40501792   | 34            |  |  |  |  |
-| Aung Khant Min |40501795    | 33            |  |  |  |  |
-| Kyaw Hein      |40501802   | 33            |  |  |  |  |
-| Total          |           | 100           |  |  |  |  |
+| Sai Wanna Aung |40501792   | 34            | 33            |  |  |  |
+| Aung Khant Min |40501795    | 33            | 34            |  |  |  |
+| Kyaw Hein      |40501802   | 33            | 33            |  |  |  |
+| Total          |           | 100           | 100           |  |  |  |
 
-# Badges 
+# Badges
 Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/master)
 
 Develop Build Status ![GitHub Workflow Status (develop)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/develop)
