@@ -1,4 +1,4 @@
-# Country Use Case 5 Produce the top N populated countries in a region where N is provided by the user.
+# Country Use Case 6 Produce the top N populated countries in a region where N is provided by the user.
 
 ## CHARACTERISTIC INFORMATION
 
