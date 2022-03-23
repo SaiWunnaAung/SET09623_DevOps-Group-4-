@@ -1,4 +1,4 @@
-## addition Use Case 7 Produce the number of people who speak Chinese, English, Hindi, Spanish, Arabic languages from greatest number to smallest, including the percentage of the world population.
+## Addition Use Case 7 Produce the number of people who speak Chinese, English, Hindi, Spanish, Arabic languages from greatest number to smallest, including the percentage of the world population.
 
 ## CHARACTERISTIC INFORMATION
 
