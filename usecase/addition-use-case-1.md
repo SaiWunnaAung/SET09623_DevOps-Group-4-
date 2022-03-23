@@ -1,4 +1,4 @@
-# addition Use Case 1 Produce the population of the world.
+# Addition Use Case 1 Produce the population of the world.
 
 ## CHARACTERISTIC INFORMATION
 
