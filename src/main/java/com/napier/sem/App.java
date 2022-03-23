@@ -72,7 +72,7 @@ public class App
             for(int i=0; i<reportNo.length;i++){
                 System.out.println(reportNo[i]);
             }
-        System.out.println("Choose Report : 7");
+        System.out.println("Choose Report Number: 7");
             chooseMenu(7);
 
     }
