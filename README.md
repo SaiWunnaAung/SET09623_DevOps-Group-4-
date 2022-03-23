@@ -16,7 +16,7 @@
 | Kyaw Hein      |40501802   | 33            | 33            |  |  |  |
 | Total          |           | 100           | 100           |  |  |  |
 
-# Badges 
+# Badges
 Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/master)
 
 Develop Build Status ![GitHub Workflow Status (develop)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/develop)
