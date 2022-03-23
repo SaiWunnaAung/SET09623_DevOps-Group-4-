@@ -1,4 +1,4 @@
-# population Use Case 2 Produce the population of people, people living in cities, and people not living in cities in each region.
+# Population Use Case 2 Produce the population of people, people living in cities, and people not living in cities in each region.
 
 ## CHARACTERISTIC INFORMATION
 
