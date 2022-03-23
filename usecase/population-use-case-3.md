@@ -1,4 +1,4 @@
-# population Use Case 3 Produce the population of people, people living in cities, and people not living in cities in each country.
+# Population Use Case 3 Produce the population of people, people living in cities, and people not living in cities in each country.
 
 ## CHARACTERISTIC INFORMATION
 
