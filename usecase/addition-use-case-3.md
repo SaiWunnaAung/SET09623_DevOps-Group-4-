@@ -1,4 +1,4 @@
-# addition Use Case 3 Produce the population of a region.
+# Addition Use Case 3 Produce the population of a region.
 
 ## CHARACTERISTIC INFORMATION
 
@@ -37,7 +37,7 @@ A request for world population is sent to client.
 ## MAIN SUCCESS SCENARIO
 
 1. Information for the population of a region is requested.
-2. Database creates a report ordering all world by population.
+2. Database creates a report ordering all region by population.
 3. Client provides report requested.
 
 ## EXTENSIONS
