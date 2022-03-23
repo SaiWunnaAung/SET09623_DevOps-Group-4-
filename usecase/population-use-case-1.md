@@ -1,4 +1,4 @@
-# population Use Case 1 Produce the population of people, people living in cities, and people not living in cities in each continent.
+# Population Use Case 1 Produce the population of people, people living in cities, and people not living in cities in each continent.
 
 ## CHARACTERISTIC INFORMATION
 
