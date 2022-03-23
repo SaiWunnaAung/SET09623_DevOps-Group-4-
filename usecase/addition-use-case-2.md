@@ -1,4 +1,4 @@
-# addition Use Case 2 Produce the population of a continent.
+# Addition Use Case 2 Produce the population of a continent.
 
 ## CHARACTERISTIC INFORMATION
 
@@ -37,7 +37,7 @@ A request for world population is sent to client.
 ## MAIN SUCCESS SCENARIO
 
 1. Information for the population of a continent  is requested.
-2. Database creates a report ordering all world by population.
+2. Database creates a report ordering all continent by population.
 3. Client provides report requested.
 
 ## EXTENSIONS
