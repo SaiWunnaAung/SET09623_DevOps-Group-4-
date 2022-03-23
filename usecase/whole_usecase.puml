@@ -1,0 +1,17 @@
+@startuml
+
+actor RC as "Client(Report Viewer)"
+rectangle "World Population Reporting System" {
+    usecase UC1 as "View Country Report"
+    usecase UC2 as "View City Report"
+    usecase UC3 as "View Population Report"
+    usecase UC4 as "View Capital City Report"
+    usecase UC5 as "View Additional Report"
+RC--UC1
+RC--UC2
+RC--UC3
+RC--UC4
+RC--UC5
+}
+
+@enduml
