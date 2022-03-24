@@ -12,7 +12,13 @@ import java.util.ArrayList;
  */
 public class DatabaseConnection {
 
+    /**
+     * Connection Object for mysql
+     */
     private static Connection con = null;
+    /**
+     * Database connection instance for singleton
+     */
     private static DatabaseConnection instance = null;
 
     /**
