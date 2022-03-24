@@ -12,7 +12,13 @@ import java.util.ArrayList;
  */
 public class DatabaseConnection {
 
+    /**
+     * Connection Object for mysql
+     */
     private static Connection con = null;
+    /**
+     * Database connection instance for singleton
+     */
     private static DatabaseConnection instance = null;
 
     /**
@@ -96,8 +102,8 @@ public class DatabaseConnection {
      * @return countries ArrayList
      */
     public ArrayList<Country> countryReportOne(String query){
-         Statement statement;
-         ResultSet resultSet;
+        Statement statement;
+        ResultSet resultSet;
         ArrayList<Country> countries = new ArrayList<>();
         try {
             statement = con.createStatement();
@@ -135,8 +141,8 @@ public class DatabaseConnection {
      * @return countries ArrayList
      */
     public ArrayList<Country> countryReportTwo(String query){
-         Statement statement;
-         ResultSet resultSet;
+        Statement statement;
+        ResultSet resultSet;
         ArrayList<Country> countries = new ArrayList<>();
         try {
             statement = con.createStatement();
@@ -174,8 +180,8 @@ public class DatabaseConnection {
      * @return cities ArrayList
      */
     public ArrayList<City> cityReportOne(String query){
-         Statement statement;
-         ResultSet resultSet;
+        Statement statement;
+        ResultSet resultSet;
         ArrayList<City> cities = new ArrayList<>();
         try {
             statement = con.createStatement();
@@ -211,8 +217,8 @@ public class DatabaseConnection {
      * @return capitalCities ArrayList
      */
     public ArrayList<City> cityReportTwo(String query){
-         Statement statement;
-         ResultSet resultSet;
+        Statement statement;
+        ResultSet resultSet;
         ArrayList<City> cities = new ArrayList<>();
         try {
             statement = con.createStatement();
@@ -249,8 +255,8 @@ public class DatabaseConnection {
      * @return capitalCities ArrayList
      */
     public ArrayList<CapitalCity> capitalCityReportOne(String query){
-         Statement statement;
-         ResultSet resultSet;
+        Statement statement;
+        ResultSet resultSet;
         ArrayList<CapitalCity> capitalCities = new ArrayList<>();
         try {
             statement = con.createStatement();
@@ -314,7 +320,7 @@ public class DatabaseConnection {
         report.simplePopulationReportTemplate(population);
     }
 
-      /**
+    /**
      * Methods for retrieve data for PopulationReportTwo
      * @param query of sql
      * @return populations ArrayList
@@ -350,7 +356,7 @@ public class DatabaseConnection {
     }
 
 
-      /**
+    /**
      * Methods for retrieve data for PopulationReportThree
      * @param query of sql
      * @return populations ArrayList
@@ -385,7 +391,7 @@ public class DatabaseConnection {
         report.simplePopulationReportTemplate(population);
     }
 
-      /**
+    /**
      * Methods for retrieve data for PopulationReportFour
      * @param query of sql
      * @return populations ArrayList
@@ -420,7 +426,7 @@ public class DatabaseConnection {
         report.simplePopulationReportTemplate(population);
     }
 
-      /**
+    /**
      * Methods for retrieve data for PopulationReportFive
      * @param query of sql
      * @return populations ArrayList
