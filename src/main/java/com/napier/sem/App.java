@@ -77,9 +77,74 @@ public class App
         for(int i=0; i<reportItem.length;i++){
             System.out.println(reportItem[i]);
         }
+
+        System.out.println("Choose Report : 1");
+        // Call chooseMenu method
+        chooseMenu(1);
+
+        System.out.println("Choose Report : 2");
+        // Call chooseMenu method
+        chooseMenu(2);
+
+        System.out.println("Choose Report : 7");
+        // Call chooseMenu method
+        chooseMenu(7);
+
+        System.out.println("Choose Report : 8");
+        // Call chooseMenu method
+        chooseMenu(8);
+
+        System.out.println("Choose Report : 17");
+        // Call chooseMenu method
+        chooseMenu(17);
+
+        System.out.println("Choose Report : 26");
+        // Call chooseMenu method
+        chooseMenu(26);
+
+        System.out.println("Choose Report : 27");
+        // Call chooseMenu method
+        chooseMenu(27);
+
+        System.out.println("Choose Report : 28");
+        // Call chooseMenu method
+        chooseMenu(28);
+
+        System.out.println("Choose Report : 29");
+        // Call chooseMenu method
+        chooseMenu(29);
+
+        System.out.println("Choose Report : 32");
+        // Call chooseMenu method
+        chooseMenu(32);
+
+        System.out.println("Choose Report : 3");
+        // Call chooseMenu method
+        chooseMenu(3);
+
         System.out.println("Choose Report : 4");
         // Call chooseMenu method
         chooseMenu(4);
+
+        System.out.println("Choose Report : 9");
+        // Call chooseMenu method
+        chooseMenu(9);
+
+        System.out.println("Choose Report : 10");
+        // Call chooseMenu method
+        chooseMenu(10);
+
+        System.out.println("Choose Report : 13");
+        // Call chooseMenu method
+        chooseMenu(13);
+
+        System.out.println("Choose Report : 23");
+        // Call chooseMenu method
+        chooseMenu(23);
+
+        System.out.println("Choose Report : 24");
+        // Call chooseMenu method
+        chooseMenu(24);
 
     }
 

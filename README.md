@@ -27,6 +27,7 @@ Release [![Releases](https://img.shields.io/github/release/SaiWunnaAung/group4/a
 
 Code of Conduct [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SaiWunnaAung/group4/blob/master/CODE_OF_CONDUCT.md)
 
+Code Coverage [![codecov](https://codecov.io/gh/SaiWunnaAung/group4/branch/master/graph/badge.svg?token=GR5UHCYCPW)](https://codecov.io/gh/SaiWunnaAung/group4)
 # Report for Sprint-2
 | No  | Issues ID | Name                                                                             | Requirement Meet | Screenshot             |
 |-----|-----------|----------------------------------------------------------------------------------|------------------|------------------------|
@@ -40,3 +41,16 @@ Code of Conduct [![Code of Conduct](https://img.shields.io/badge/code%20of-condu
 | 8   | 28        | The population of a region.                                                      | Yes              | ![](screenshot/28.PNG) |
 | 9   | 29        | The population of a country.                                                     | Yes              | ![](screenshot/29.PNG) |
 | 10  | 32        | The number of people who speak the Chinese,English,Hindi,Spanish,Arabic languages from greatest number to smallest, including the percentage of the world population.                                                                                | Yes              | ![](screenshot/32.PNG) |
+
+
+
+# Report for Sprint-3
+| No  | Issues ID | Name                                                                             | Requirement Meet | Screenshot             |
+|-----|-------|----------------------------------------------------------------------------------|------------------|------------------------|
+| 1   | 3     | All the countries in a region organised by largest population to smallest.      | Yes              | ![](screenshot/3.PNG)  |
+| 2   | 4     | The top N populated countries in the world where N is provided by the user.    | Yes              | ![](screenshot/4.PNG)  |
+| 3   | 9     | All the cities in a region organised by largest population to smallest.         | Yes              | ![](screenshot/9.PNG)  |
+| 4   | 10    | All the cities in a country organised by largest population to smallest.       | Yes              | ![](screenshot/10.PNG) |
+| 5   | 13    | The top N populated cities in a continent where N is provided by the user. | Yes              | ![](screenshot/13.PNG) |
+| 6   | 23    | The population of people, people living in cities, and people not living in cities in each continent.                                                     | Yes              | ![](screenshot/23.PNG) |
+| 7   | 24    | The population of people, people living in cities, and people not living in cities in each region.                                                  | Yes              | ![](screenshot/24.PNG) |
