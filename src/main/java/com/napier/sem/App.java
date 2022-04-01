@@ -79,7 +79,7 @@ public class App
         }
         System.out.println("Choose Report : 3");
         // Call chooseMenu method
-        chooseMenu(3);
+        chooseMenu(4);
 
     }
 
