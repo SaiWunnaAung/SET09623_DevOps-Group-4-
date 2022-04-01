@@ -2,6 +2,7 @@ package com.napier.sem;
 
 import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
+import com.napier.sem.model.Country;
 import com.napier.sem.model.Population;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -33,6 +34,66 @@ public class AppIntegrationTest {
         db = DatabaseConnection.Instance();
         // Connect to the database
         db.connect("localhost:33060", 30000);
+    }
+    
+    /**
+     * This method is integration test for Country Report One
+     * @throws SQLException
+     */
+    @Test
+    void testCountryReportOne() throws SQLException {
+        // create array list
+        ArrayList<Country> countries = db.countryReportOne();
+        // check array list is null
+        assertNotNull(countries);
+        // check array list has data
+        assertEquals(countries.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(countries.get(0).getCode());
+        assertNotNull(countries.get(0).getName());
+        assertNotNull(countries.get(0).getContinent());
+        assertNotNull(countries.get(0).getRegion());
+        assertNotNull(countries.get(0).getPopulation());
+        assertNotNull(countries.get(0).getCapital());
+        /*Check expected data are correct or not*/
+        assertEquals(countries.get(0).getCode(),"CHN");
+        assertEquals(countries.get(0).getName(),"China");
+        assertEquals(countries.get(0).getContinent(),"Asia");
+        assertEquals(countries.get(0).getRegion(),"Eastern Asia");
+        assertEquals(countries.get(0).getPopulation(),1277558000);
+        assertEquals(countries.get(0).getCapital(),"Peking");
+        // print report
+        report.countryReportTemplate(countries);
+    }
+
+    /**
+     * This method is integration test for Country Report Two
+     * @throws SQLException
+     */
+    @Test
+    void testCountryReportTwo() throws SQLException {
+        // create array list
+        ArrayList<Country> countries = db.countryReportTwo("Asia");
+        // check array list is null
+        assertNotNull(countries);
+        // check array list has data
+        assertEquals(countries.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(countries.get(0).getCode());
+        assertNotNull(countries.get(0).getName());
+        assertNotNull(countries.get(0).getContinent());
+        assertNotNull(countries.get(0).getRegion());
+        assertNotNull(countries.get(0).getPopulation());
+        assertNotNull(countries.get(0).getCapital());
+        /*Check expected data are correct or not*/
+        assertEquals(countries.get(0).getCode(),"CHN");
+        assertEquals(countries.get(0).getName(),"China");
+        assertEquals(countries.get(0).getContinent(),"Asia");
+        assertEquals(countries.get(0).getRegion(),"Eastern Asia");
+        assertEquals(countries.get(0).getPopulation(),1277558000);
+        assertEquals(countries.get(0).getCapital(),"Peking");
+        // print report
+        report.countryReportTemplate(countries);
     }
 
     /**
