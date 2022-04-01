@@ -4,15 +4,17 @@ import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import com.napier.sem.model.Country;
 import com.napier.sem.model.Population;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * This class is for Integration Testing
+ */
 public class AppIntegrationTest {
     // Define Report object
     static Report report;
@@ -310,7 +312,6 @@ public class AppIntegrationTest {
         report.capitalCityReportTemplate(capitalCities);
     }
 
-
     /**
      * This method is integration test for Population Report one
      * @throws SQLException
@@ -482,4 +483,12 @@ public class AppIntegrationTest {
         report.advancePopulationReportTemplate(populations);
     }
 
+    /**
+     * This method will run after all integration test
+     * @throws SQLException
+     */
+    @AfterAll()
+    static void end() throws SQLException {
+        db.disconnect(); // Disconnect database connection after running all test
+    }
 }

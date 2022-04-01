@@ -31,6 +31,28 @@ class UnitTest
      * This method is test method for City Reports
      */
     @Test
+    void uniTestCountryReport()
+    {
+        // Create countries Array List
+        ArrayList<Country> countries = new ArrayList<Country>();
+        /* Create Country Object and set data to setter methods*/
+        Country country = new Country();
+        country.setCode("CHN");
+        country.setName("China");
+        country.setContinent("Asia");
+        country.setRegion("Eastern Asia");
+        country.setPopulation(1277558000);
+        country.setCapital("Peking");
+        // Push country object into countries array list
+        countries.add(country);
+        // Print country report
+        report.countryReportTemplate(countries);
+    }
+
+    /**
+     * This method is test method for City Reports
+     */
+    @Test
     void uniTestCityReport()
     {
         // Create cities Array List
@@ -48,25 +70,44 @@ class UnitTest
     }
 
     /**
-     * This method is test method for Country Reports
+     * This method is test method for Capital City Reports
      */
     @Test
-    void uniTestCountryReport()
+    void uniTestCapitalCityReport()
     {
-        // Create countries Array List
-        ArrayList<Country> countries = new ArrayList<Country>();
-        /* Create Country Object and set data to setter methods*/
-        Country country = new Country();
-        country.setCode("CHN");
-        country.setName("China");
-        country.setContinent("Asia");
-        country.setRegion("Eastern Asia");
-        country.setPopulation(1277558000);
-        country.setCapital("Peking");
-        // Push country object into countries array list
-        countries.add(country);
-        // Print country report
-        report.countryReportTemplate(countries);
+        // Create capitalCities Array List
+        ArrayList<CapitalCity> capitalCities = new ArrayList<CapitalCity>();
+        /* Create capitalCity Object and set data to setter methods*/
+        CapitalCity capitalCity = new CapitalCity();
+        capitalCity.setName("Tokyo");
+        capitalCity.setCountry("Japan");
+        capitalCity.setPopulation(7980230);
+        // Push capitalCity object into capitalCities array list
+        capitalCities.add(capitalCity);
+        // Print capitalCity report
+        report.capitalCityReportTemplate(capitalCities);
+    }
+
+    /**
+     * This method is test method for Population Reports
+     */
+    @Test
+    void uniTestPopulationReport()
+    {
+        // Create populations Array List
+        ArrayList<Population> populations = new ArrayList<Population>();
+        /* Create population Object and set data to setter methods*/
+        Population population = new Population();
+        population.setName("Caribbean");
+        population.setPopulation(38140000);
+        population.setPopInCity(11067550);
+        population.setPopNotInCity(27072450);
+        population.setPercentagePopulationInCities(29.01);
+        population.setPercentagePopulationNotInCities(70.98);
+        // Push population object into populations array list
+        populations.add(population);
+        // Print population report
+        report.populationReportTemplate(populations);
     }
 
     /**
@@ -105,4 +146,10 @@ class UnitTest
         // Print population report
         report.advancePopulationReportTemplate(populations);
     }
+
+
+
+
+
+
 }
