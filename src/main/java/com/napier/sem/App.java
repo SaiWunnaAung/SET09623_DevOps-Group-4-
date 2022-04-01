@@ -79,7 +79,7 @@ public class App
         }
         System.out.println("Choose Report : 24");
         // Call chooseMenu method
-        chooseMenu(4);
+        chooseMenu(9);
 
     }
 
