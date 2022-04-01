@@ -46,6 +46,6 @@ class UnitTest
         // Print city report
         report.cityReportTemplate(cities);
     }
-    
+
 
 }
