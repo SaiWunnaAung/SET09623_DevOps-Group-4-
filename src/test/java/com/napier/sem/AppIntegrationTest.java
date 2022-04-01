@@ -110,4 +110,31 @@ public class AppIntegrationTest {
         // print report
         report.cityReportTemplate(cities);
     }
+
+    /**
+     * This method is integration test for City Report Four
+     * @throws SQLException
+     */
+    @Test
+    void testCityReportFour() throws SQLException {
+        // create array list
+        ArrayList<City> cities = db.cityReportFour("Thailand");
+        // check array list is null
+        assertNotNull(cities);
+        // check array list has data
+        assertEquals(cities.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(cities.get(0).getName());
+        assertNotNull(cities.get(0).getCountry());
+        assertNotNull(cities.get(0).getDistrict());
+        assertNotNull(cities.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(cities.get(0).getName(),"Bangkok");
+        assertEquals(cities.get(0).getCountry(),"Thailand");
+        assertEquals(cities.get(0).getDistrict(),"Bangkok");
+        assertEquals(cities.get(0).getPopulation(),6320174);
+        // print report
+        report.cityReportTemplate(cities);
+    }
+
 }
