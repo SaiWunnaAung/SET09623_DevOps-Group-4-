@@ -2,6 +2,7 @@ package com.napier.sem;
 
 import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
+import com.napier.sem.model.Population;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -165,7 +166,7 @@ public class AppIntegrationTest {
     }
 
     /**
-     * This method is integration test for Capital City Report One 
+     * This method is integration test for Capital City Report One
      * @throws SQLException
      */
     @Test
@@ -188,5 +189,176 @@ public class AppIntegrationTest {
         report.capitalCityReportTemplate(capitalCities);
     }
 
+
+    /**
+     * This method is integration test for Population Report one
+     * @throws SQLException
+     */
+    @Test
+    void testPopulationReportOne() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.populationReportOne();
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        assertNotNull(populations.get(0).getPopInCity());
+        assertNotNull(populations.get(0).getPopNotInCity());
+        assertNotNull(populations.get(0).getPercentagePopulationInCities());
+        assertNotNull(populations.get(0).getPercentagePopulationNotInCities());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"North America");
+        assertEquals(populations.get(0).getPopulation(),482993000);
+        assertEquals(populations.get(0).getPopInCity(),168250381);
+        assertEquals(populations.get(0).getPopNotInCity(),314742619);
+        assertEquals(populations.get(0).getPercentagePopulationInCities(),34.834999084472656);
+        assertEquals(populations.get(0).getPercentagePopulationNotInCities(),65.16500091552734);
+        // print report
+        report.populationReportTemplate(populations);
+    }
+
+    /**
+     * This method is integration test for Population Report Two
+     * @throws SQLException
+     */
+    @Test
+    void testPopulationReportTwo() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.populationReportTwo();
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        assertNotNull(populations.get(0).getPopInCity());
+        assertNotNull(populations.get(0).getPopNotInCity());
+        assertNotNull(populations.get(0).getPercentagePopulationInCities());
+        assertNotNull(populations.get(0).getPercentagePopulationNotInCities());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"Caribbean");
+        assertEquals(populations.get(0).getPopulation(),38140000);
+        assertEquals(populations.get(0).getPopInCity(),11067550);
+        assertEquals(populations.get(0).getPopNotInCity(),27072450);
+        assertEquals(populations.get(0).getPercentagePopulationInCities(),29.018199920654297);
+        assertEquals(populations.get(0).getPercentagePopulationNotInCities(),70.98179626464844);
+        // print report
+        report.populationReportTemplate(populations);
+    }
+
+    /**
+     * This method is integration test for Additional Report One
+     * @throws SQLException
+     */
+    @Test
+    void testAdditionalReportOne() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.additionalReportOne();
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"World Population");
+        assertEquals(populations.get(0).getPopulation(),6078749450L);
+        // print report
+        report.simplePopulationReportTemplate(populations);
+    }
+
+    /**
+     * This method is integration test for Additional Report Two
+     * @throws SQLException
+     */
+    @Test
+    void testAdditionalReportTwo() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.additionalReportTwo("Europe");
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"Europe");
+        assertEquals(populations.get(0).getPopulation(),730074600L);
+        // print report
+        report.simplePopulationReportTemplate(populations);
+    }
+    /**
+     * This method is integration test for Additional Report Three
+     * @throws SQLException
+     */
+    @Test
+    void testAdditionalReportThree() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.additionalReportThree("North America");
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"North America");
+        assertEquals(populations.get(0).getPopulation(),309632000L);
+        // print report
+        report.simplePopulationReportTemplate(populations);
+    }
+
+    /**
+     * This method is integration test for Additional Report Four
+     * @throws SQLException
+     */
+    @Test
+    void testAdditionalReportFour() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.additionalReportFour("United Kingdom");
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"United Kingdom");
+        assertEquals(populations.get(0).getPopulation(),59623400L);
+        // print report
+        report.simplePopulationReportTemplate(populations);
+    }
+
+    /**
+     * This method is integration test for Additional Report Seven
+     * @throws SQLException
+     */
+    @Test
+    void testAdditionalReportSeven() throws SQLException {
+        // create array list
+        ArrayList<Population> populations = db.additionalReportSeven();
+        // check array list is null
+        assertNotNull(populations);
+        // check array list has data
+        assertEquals(populations.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(populations.get(0).getName());
+        assertNotNull(populations.get(0).getPopulation());
+        assertNotNull(populations.get(0).getPercentagePopulationInCities());
+        /*Check expected data are correct or not*/
+        assertEquals(populations.get(0).getName(),"Chinese");
+        assertEquals(populations.get(0).getPopulation(),119184353900L);
+        assertEquals(populations.get(0).getPercentagePopulationInCities(),19.606719970703125);
+        // print report
+        report.advancePopulationReportTemplate(populations);
+    }
 
 }
