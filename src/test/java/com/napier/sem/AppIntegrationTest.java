@@ -1,5 +1,6 @@
 package com.napier.sem;
 
+import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -162,5 +163,30 @@ public class AppIntegrationTest {
         // print report
         report.cityReportTemplate(cities);
     }
+
+    /**
+     * This method is integration test for Capital City Report One
+     * @throws SQLException
+     */
+    @Test
+    void testCapitalCityReportOne() throws SQLException {
+        // create array list
+        ArrayList<CapitalCity> capitalCities = db.capitalCityReportOne();
+        // check array list is null
+        assertNotNull(capitalCities);
+        // check array list has data
+        assertEquals(capitalCities.size() > 0, true);
+        /*Check data items are not null*/
+        assertNotNull(capitalCities.get(0).getName());
+        assertNotNull(capitalCities.get(0).getCountry());
+        assertNotNull(capitalCities.get(0).getPopulation());
+        /*Check expected data are correct or not*/
+        assertEquals(capitalCities.get(0).getName(),"Seoul");
+        assertEquals(capitalCities.get(0).getCountry(),"South Korea");
+        assertEquals(capitalCities.get(0).getPopulation(),9981619);
+        // print report
+        report.capitalCityReportTemplate(capitalCities);
+    }
+
 
 }
