@@ -165,7 +165,7 @@ public class AppIntegrationTest {
     }
 
     /**
-     * This method is integration test for Capital City Report One 
+     * This method is integration test for Capital City Report One
      * @throws SQLException
      */
     @Test
