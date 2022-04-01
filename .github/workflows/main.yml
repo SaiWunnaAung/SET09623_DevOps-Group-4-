@@ -2,7 +2,7 @@ name: A workflow for my Group4 App
 on:
   push:
     branches:
-      - develop
+      - master
 jobs:
   UnitTests:
     name: Unit Tests
