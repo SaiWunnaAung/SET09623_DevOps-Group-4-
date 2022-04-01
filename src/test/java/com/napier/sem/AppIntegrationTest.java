@@ -35,7 +35,7 @@ public class AppIntegrationTest {
         // Connect to the database
         db.connect("localhost:33060", 30000);
     }
-    
+
     /**
      * This method is integration test for Country Report One
      * @throws SQLException
