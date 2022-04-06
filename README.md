@@ -9,5 +9,4 @@
 | Technical Leader | Kyaw Hein      | 40501802             |
 
 # Badges
-
 feature/population-report Build Status ![GitHub Workflow Status (feature/country-report)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/feature/population-report)
