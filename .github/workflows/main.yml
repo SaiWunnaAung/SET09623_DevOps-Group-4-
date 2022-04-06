@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - feature/country-report
 jobs:
   UnitTests:
     name: Unit Tests

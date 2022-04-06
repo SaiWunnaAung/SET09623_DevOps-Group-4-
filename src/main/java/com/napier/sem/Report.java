@@ -70,7 +70,7 @@ public class Report {
      */
     public void capitalCityReportTemplate(ArrayList<CapitalCity> capitalCity){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-30s  %-20s", "No",  "NAME", "CONTINENT","POPULATION");
+        System.out.format("%-9s %-30.25s  %-30s  %-20s", "No",  "NAME", "Country","POPULATION");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
