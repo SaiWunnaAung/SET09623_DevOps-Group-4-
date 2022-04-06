@@ -1,5 +1,8 @@
 package com.napier.sem;
+
 import com.napier.sem.model.City;
+
+import com.napier.sem.model.Country;
 
 import java.util.ArrayList;
 
@@ -34,6 +37,7 @@ public class Report {
             System.out.println("\n");
         }
     }
+
 
 
 }

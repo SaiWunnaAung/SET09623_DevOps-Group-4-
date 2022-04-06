@@ -1,6 +1,10 @@
 package com.napier.sem;
 
+
 import com.napier.sem.model.City;
+
+import com.napier.sem.model.Country;
+
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
@@ -24,8 +28,6 @@ class UnitTest
         report = new Report();
     }
 
-
-
     /**
      * This method is test method for City Reports
      */
@@ -45,5 +47,6 @@ class UnitTest
         // Print city report
         report.cityReportTemplate(cities);
     }
+
 
 }

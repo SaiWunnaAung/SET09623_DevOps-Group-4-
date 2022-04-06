@@ -78,6 +78,7 @@ public class App
             System.out.println(reportItem[i]);
         }
 
+
         System.out.println("Choose Report : 7");
         // Call chooseMenu method
         chooseMenu(7);
@@ -95,12 +96,24 @@ public class App
         chooseMenu(10);
 
         System.out.println("Choose Report : 11");
+
+        System.out.println("Choose Report : 1");
+        // Call chooseMenu method
+        chooseMenu(1);
+
+        System.out.println("Choose Report : 2");
+        // Call chooseMenu method
+        chooseMenu(2);
+
+        System.out.println("Choose Report : 3");
+
         // Call chooseMenu method
         chooseMenu(11);
 
         System.out.println("Choose Report : 12");
         // Call chooseMenu method
         chooseMenu(12);
+
 
         System.out.println("Choose Report : 13");
         // Call chooseMenu method
@@ -118,6 +131,14 @@ public class App
         // Call chooseMenu method
         chooseMenu(16);
 
+        System.out.println("Choose Report : 5");
+        // Call chooseMenu method
+        chooseMenu(5);
+
+        System.out.println("Choose Report : 6");
+        // Call chooseMenu method
+        chooseMenu(6);
+
 
     }
 
@@ -130,6 +151,7 @@ public class App
         Report report = new Report();
         // Choose Report item by using switch
         switch (num) {
+
 
             /*If user choose 7 the system will print all the cities in the world
             organised by largest population to smallest*/
@@ -206,6 +228,53 @@ public class App
                 System.out.println("Enter district: Hubei");
                 System.out.println("Enter number: 3");
                 report.cityReportTemplate(db.cityReportten(3,"Hubei"));// Print report
+                break;
+
+
+            /*If user choose 1 the system will print all the countries in the world
+            organised by largest population to smallest*/
+            case 1:
+                System.out.println("All the countries in the world organised by largest population to smallest");
+                report.countryReportTemplate(db.countryReportOne()); // Print report
+                break;
+
+            /*If user choose 2 the system will print all the countries in a continent
+             organised by largest population to smallest*/
+            case 2:
+                System.out.println("All the countries in a continent organised by largest population to smallest");
+                System.out.println("Enter continent: Asia");
+                report.countryReportTemplate(db.countryReportTwo("Asia")); // Print report
+                break;
+
+            /*If user choose 3 the system will print all the countries in a region
+            organised by largest population to smallest*/
+            case 3:
+                System.out.println("All the countries in a region organised by largest population to smallest");
+                System.out.println("Enter region: Eastern Asia");
+                report.countryReportTemplate(db.countryReportThree("Eastern Asia"));// Print report
+                break;
+
+            /*If user choose 4 the system will print the top N populated countries in the world*/
+            case 4:
+                System.out.println("The top N populated countries in the world");
+                System.out.println("Enter number: 5");
+                report.countryReportTemplate(db.countryReportFour(5));// Print report
+                break;
+
+            /*If user choose 5 the system will print the top N populated countries in a continent where N is provided by the user.*/
+            case 5:
+                System.out.println("The top N populated countries in a continent where N is provided by the user");
+                System.out.println("Enter continent: Asia");
+                System.out.println("Enter number: 5");
+                report.countryReportTemplate(db.countryReportFive("Asia",5));// Print report
+                break;
+
+            /*If user choose 6 the system will print Not available in this version*/
+            case 6:
+                System.out.println("The top N populated countries in a region where N is provided by the user");
+                System.out.println("Enter region: Eastern Asia");
+                System.out.println("Enter number: 7");
+                report.countryReportTemplate(db.countryReportSix("Eastern Asia",7));// Print report
                 break;
 
 
