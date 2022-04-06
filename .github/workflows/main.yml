@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - feature/city-report
 jobs:
   UnitTests:
     name: Unit Tests

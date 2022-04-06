@@ -78,14 +78,6 @@ public class App
             System.out.println(reportItem[i]);
         }
 
-        System.out.println("Choose Report : 1");
-        // Call chooseMenu method
-        chooseMenu(1);
-
-        System.out.println("Choose Report : 2");
-        // Call chooseMenu method
-        chooseMenu(2);
-
         System.out.println("Choose Report : 7");
         // Call chooseMenu method
         chooseMenu(7);
@@ -93,6 +85,14 @@ public class App
         System.out.println("Choose Report : 8");
         // Call chooseMenu method
         chooseMenu(8);
+
+        System.out.println("Choose Report : 9");
+        // Call chooseMenu method
+        chooseMenu(9);
+
+        System.out.println("Choose Report : 10");
+        // Call chooseMenu method
+        chooseMenu(10);
 
         System.out.println("Choose Report : 17");
         // Call chooseMenu method
