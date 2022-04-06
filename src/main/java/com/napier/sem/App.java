@@ -78,73 +78,29 @@ public class App
             System.out.println(reportItem[i]);
         }
 
-        System.out.println("Choose Report : 1");
-        // Call chooseMenu method
-        chooseMenu(1);
-
-        System.out.println("Choose Report : 2");
-        // Call chooseMenu method
-        chooseMenu(2);
-
-        System.out.println("Choose Report : 7");
-        // Call chooseMenu method
-        chooseMenu(7);
-
-        System.out.println("Choose Report : 8");
-        // Call chooseMenu method
-        chooseMenu(8);
-
         System.out.println("Choose Report : 17");
         // Call chooseMenu method
         chooseMenu(17);
 
-        System.out.println("Choose Report : 26");
+        System.out.println("Choose Report : 18");
         // Call chooseMenu method
-        chooseMenu(26);
+        chooseMenu(18);
 
-        System.out.println("Choose Report : 27");
+        System.out.println("Choose Report : 19");
         // Call chooseMenu method
-        chooseMenu(27);
+        chooseMenu(19);
 
-        System.out.println("Choose Report : 28");
+        System.out.println("Choose Report : 20");
         // Call chooseMenu method
-        chooseMenu(28);
+        chooseMenu(20);
 
-        System.out.println("Choose Report : 29");
+        System.out.println("Choose Report : 21");
         // Call chooseMenu method
-        chooseMenu(29);
+        chooseMenu(21);
 
-        System.out.println("Choose Report : 32");
+        System.out.println("Choose Report : 22");
         // Call chooseMenu method
-        chooseMenu(32);
-
-        System.out.println("Choose Report : 3");
-        // Call chooseMenu method
-        chooseMenu(3);
-
-        System.out.println("Choose Report : 4");
-        // Call chooseMenu method
-        chooseMenu(4);
-
-        System.out.println("Choose Report : 9");
-        // Call chooseMenu method
-        chooseMenu(9);
-
-        System.out.println("Choose Report : 10");
-        // Call chooseMenu method
-        chooseMenu(10);
-
-        System.out.println("Choose Report : 13");
-        // Call chooseMenu method
-        chooseMenu(13);
-
-        System.out.println("Choose Report : 23");
-        // Call chooseMenu method
-        chooseMenu(23);
-
-        System.out.println("Choose Report : 24");
-        // Call chooseMenu method
-        chooseMenu(24);
+        chooseMenu(22);
 
     }
 
@@ -156,109 +112,6 @@ public class App
         Report report = new Report();
         // Choose Report item by using switch
         switch (num) {
-            /*If user choose 1 the system will print all the countries in the world
-            organised by largest population to smallest*/
-            case 1:
-                System.out.println("All the countries in the world organised by largest population to smallest");
-                report.countryReportTemplate(db.countryReportOne()); // Print report
-                break;
-
-            /*If user choose 2 the system will print all the countries in a continent
-             organised by largest population to smallest*/
-            case 2:
-                System.out.println("All the countries in a continent organised by largest population to smallest");
-                System.out.println("Enter continent: Asia");
-                report.countryReportTemplate(db.countryReportTwo("Asia")); // Print report
-                break;
-
-            /*If user choose 3 the system will print all the countries in a region
-            organised by largest population to smallest*/
-            case 3:
-                System.out.println("All the countries in a region organised by largest population to smallest");
-                System.out.println("Enter region: Eastern Asia");
-                report.countryReportTemplate(db.countryReportThree("Eastern Asia"));// Print report
-                break;
-
-            /*If user choose 4 the system will print the top N populated countries in the world*/
-            case 4:
-                System.out.println("The top N populated countries in the world");
-                System.out.println("Enter number: 5");
-                report.countryReportTemplate(db.countryReportFour(5));// Print report
-                break;
-
-            /*If user choose 5 the system will print Not available in this version*/
-            case 5:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 6 the system will print Not available in this version*/
-            case 6:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 7 the system will print all the cities in the world
-            organised by largest population to smallest*/
-            case 7:
-                System.out.println("All the cities in the world organised by largest population to smallest");
-                report.cityReportTemplate(db.cityReportOne());// Print report
-                break;
-
-            /*If user choose 8 the system will print all the cities in a continent
-            organised by largest population to smallest*/
-            case 8:
-                System.out.println("All the cities in a continent organised by largest population to smallest");
-                System.out.println("Enter Continent: Asia");
-                report.cityReportTemplate(db.cityReportTwo("Asia")); // Print report
-                break;
-
-            /*If user choose 9 the system will print all the cities in a region
-            organised by largest population to smallest*/
-            case 9:
-                System.out.println("All the cities in a region organised by largest population to smallest");
-                System.out.println("Enter Region: Eastern Asia");
-                report.cityReportTemplate(db.cityReportThree("Eastern Asia")); // Print report
-                break;
-
-            /*If user choose 10 the system will print all the cities in a country
-            organised by largest population to smallest*/
-            case 10:
-                System.out.println("All the cities in a country organised by largest population to smallest");
-                System.out.println("Enter Country: Thailand");
-                report.cityReportTemplate(db.cityReportFour("Thailand")); // Print report
-                break;
-
-            /*If user choose 11 the system will print Not available in this version*/
-            case 11:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 12 the system will print Not available in this version*/
-            case 12:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 13 the system will print the top N populated cities in a continent*/
-            case 13:
-                System.out.println("The top N populated cities in a continent");
-                System.out.println("Enter continent: Asia");
-                System.out.println("Enter number: 7");
-                report.cityReportTemplate(db.cityReportSeven(7,"Asia"));// Print report
-                break;
-
-            /*If user choose 14 the system will print Not available in this version*/
-            case 14:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 15 the system will print Not available in this version*/
-            case 15:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 16 the system will print Not available in this version*/
-            case 16:
-                System.out.println("Not available in this version");
-                break;
 
             /*If user choose 17 the system will print all the capital cities in the world
              organised by largest population to smallest*/
@@ -267,96 +120,43 @@ public class App
                 report.capitalCityReportTemplate(db.capitalCityReportOne()); // Print report
                 break;
 
-            /*If user choose 18 the system will print Not available in this version*/
+            /*If user choose 18 the system will print all the capital cities in a continent organised by largest population to smallest*/
             case 18:
-                System.out.println("Not available in this version");
+                System.out.println("All the capital cities in a continent organised by largest population to smallest");
+                System.out.println("Enter continent: Asia");
+                report.capitalCityReportTemplate(db.capitalCityReportTwo("Asia")); // Print report
                 break;
 
-            /*If user choose 19 the system will print Not available in this version*/
+            /*If user choose 19 the system will print all the capital cities in a region organised by largest to smallest*/
             case 19:
-                System.out.println("Not available in this version");
+                System.out.println("All the capital cities in a region organised by largest to smallest");
+                System.out.println("Enter region: South America");
+                report.capitalCityReportTemplate(db.capitalCityReportThree("South America")); // Print report
                 break;
 
-            /*If user choose 20 the system will print Not available in this version*/
+            /*If user choose 20 the system will print the top N populated capital cities in the world where N is provided by the user*/
             case 20:
-                System.out.println("Not available in this version");
+                System.out.println("The top N populated capital cities in the world where N is provided by the user");
+                System.out.println("Enter no: 7 ");
+                report.capitalCityReportTemplate(db.capitalCityReportFour(7)); // Print report
                 break;
 
-            /*If user choose 21 the system will print Not available in this version*/
+            /*If user choose 21 the system will print the top N populated capital cities in a continent where N is provided by the user*/
             case 21:
-                System.out.println("Not available in this version");
+                System.out.println("The top N populated capital cities in a continent where N is provided by the user");
+                System.out.println("Enter Continent: Europe ");
+                System.out.println("Enter number: 7 ");
+                report.capitalCityReportTemplate(db.capitalCityReportFive("Europe",5)); // Print report
                 break;
 
-            /*If user choose 22 the system will print Not available in this version*/
+            /*If user choose 22 the system will print the top N populated capital cities in a region where N is provided by the user*/
             case 22:
-                System.out.println("Not available in this version");
+                System.out.println("The top N populated capital cities in a region where N is provided by the user");
+                System.out.println("Enter Region: North America ");
+                System.out.println("Enter number: 4 ");
+                report.capitalCityReportTemplate(db.capitalCityReportSix("North America",4)); // Print report
                 break;
 
-            /*If user choose 23the system will print the population of people,
-            people living in cities, and people not living in cities in each continent*/
-            case 23:
-                System.out.println("The population of people, people living in cities, and people not living in cities in each continent");
-                report.populationReportTemplate(db.populationReportOne()); // Print report
-                break;
-
-            /*If user choose 24 the system will print the population of people,
-            people living in cities, and people not living in cities in each region*/
-            case 24:
-                System.out.println("The population of people, people living in cities, and people not living in cities in each region");
-                report.populationReportTemplate(db.populationReportTwo()); // Print report
-                break;
-
-            /*If user choose 25 the system will print Not available in this version*/
-            case 25:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 26 the system will print the population of the world*/
-            case 26:
-                System.out.println("The population of the world");
-                report.simplePopulationReportTemplate(db.additionalReportOne()); // Print report
-                break;
-
-            /*If user choose 27 the system will the population of a continent*/
-            case 27:
-                System.out.println("The population of a continent");
-                System.out.println("Enter Continent: Europe");
-//                String contt = sc.nextLine();
-                report.simplePopulationReportTemplate(db.additionalReportTwo("Europe"));// Print report
-                break;
-
-            /*If user choose 28 the system will the population of a region*/
-            case 28:
-                System.out.println("The population of a region");
-                System.out.println("Enter Region: North America");
-//                String regg = sc.nextLine();
-                report.simplePopulationReportTemplate(db.additionalReportThree("North America"));// Print report
-                break;
-
-            /*If user choose 29 the system will the population of a country*/
-            case 29:
-                System.out.println("The population of a country");
-                System.out.println("Enter Country: United Kingdom");
-//                String cou = sc.nextLine();
-                report.simplePopulationReportTemplate(db.additionalReportFour("United Kingdom"));// Print report
-                break;
-
-            /*If user choose 30 the system will print Not available in this version*/
-            case 30:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 31 the system will print Not available in this version*/
-            case 31:
-                System.out.println("Not available in this version");
-                break;
-
-            /*If user choose 32 the system will print  the number of people
-            who speak Chinese, English, Hindi, Spanish or Arabic in the world*/
-            case 32:
-                System.out.println("The number of people who speak Chinese, English, Hindi, Spanish or Arabic in the world.");
-                report.advancePopulationReportTemplate(db.additionalReportSeven()); // Print report
-                break;
 
             /*If user type invalid input the system will show error*/
             default:
