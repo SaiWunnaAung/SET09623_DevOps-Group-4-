@@ -98,6 +98,10 @@ public class App
         // Call chooseMenu method
         chooseMenu(5);
 
+        System.out.println("Choose Report : 6");
+        // Call chooseMenu method
+        chooseMenu(6);
+
         System.out.println("Choose Report : 7");
         // Call chooseMenu method
         chooseMenu(7);
