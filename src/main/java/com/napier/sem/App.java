@@ -78,6 +78,25 @@ public class App
             System.out.println(reportItem[i]);
         }
 
+
+        System.out.println("Choose Report : 7");
+        // Call chooseMenu method
+        chooseMenu(7);
+
+        System.out.println("Choose Report : 8");
+        // Call chooseMenu method
+        chooseMenu(8);
+
+        System.out.println("Choose Report : 9");
+        // Call chooseMenu method
+        chooseMenu(9);
+
+        System.out.println("Choose Report : 10");
+        // Call chooseMenu method
+        chooseMenu(10);
+
+        System.out.println("Choose Report : 11");
+
         System.out.println("Choose Report : 1");
         // Call chooseMenu method
         chooseMenu(1);
@@ -87,12 +106,30 @@ public class App
         chooseMenu(2);
 
         System.out.println("Choose Report : 3");
-        // Call chooseMenu method
-        chooseMenu(3);
 
-        System.out.println("Choose Report : 4");
         // Call chooseMenu method
-        chooseMenu(4);
+        chooseMenu(11);
+
+        System.out.println("Choose Report : 12");
+        // Call chooseMenu method
+        chooseMenu(12);
+
+
+        System.out.println("Choose Report : 13");
+        // Call chooseMenu method
+        chooseMenu(13);
+
+        System.out.println("Choose Report : 14");
+        // Call chooseMenu method
+        chooseMenu(14);
+
+        System.out.println("Choose Report : 15");
+        // Call chooseMenu method
+        chooseMenu(15);
+
+        System.out.println("Choose Report : 16");
+        // Call chooseMenu method
+        chooseMenu(16);
 
         System.out.println("Choose Report : 5");
         // Call chooseMenu method
@@ -102,7 +139,9 @@ public class App
         // Call chooseMenu method
         chooseMenu(6);
 
+
     }
+
 
     /**
      * method for choose report items
@@ -112,6 +151,86 @@ public class App
         Report report = new Report();
         // Choose Report item by using switch
         switch (num) {
+
+
+            /*If user choose 7 the system will print all the cities in the world
+            organised by largest population to smallest*/
+            case 7:
+                System.out.println("All the cities in the world organised by largest population to smallest");
+                report.cityReportTemplate(db.cityReportOne());// Print report
+                break;
+
+            /*If user choose 8 the system will print all the cities in a continent
+            organised by largest population to smallest*/
+            case 8:
+                System.out.println("All the cities in a continent organised by largest population to smallest");
+                System.out.println("Enter Continent: Asia");
+                report.cityReportTemplate(db.cityReportTwo("Asia")); // Print report
+                break;
+
+            /*If user choose 9 the system will print all the cities in a region
+            organised by largest population to smallest*/
+            case 9:
+                System.out.println("All the cities in a region organised by largest population to smallest");
+                System.out.println("Enter Region: Eastern Asia");
+                report.cityReportTemplate(db.cityReportThree("Eastern Asia")); // Print report
+                break;
+
+            /*If user choose 10 the system will print all the cities in a country
+            organised by largest population to smallest*/
+            case 10:
+                System.out.println("All the cities in a country organised by largest population to smallest");
+                System.out.println("Enter Country: Thailand");
+                report.cityReportTemplate(db.cityReportFour("Thailand")); // Print report
+                break;
+
+            /*If user choose 11 the system will print all the cities in a district organised by largest population to smallest.*/
+            case 11:
+                System.out.println("All the cities in a district organised by largest population to smallest");
+                System.out.println("Enter District: Mandalay");
+                report.cityReportTemplate(db.cityReportFive("Mandalay")); // Print report
+                break;
+
+            /*If user choose 12 the system will print the top N populated cities in the world where N is provided by the user.*/
+            case 12:
+                System.out.println("The top N populated cities in the world where N is provided by the user");
+                System.out.println("Enter Number: 8");
+                report.cityReportTemplate(db.cityReportSix(8)); // Print report
+                break;
+
+            /*If user choose 13 the system will print the top N populated cities in a continent*/
+            case 13:
+                System.out.println("The top N populated cities in a continent");
+                System.out.println("Enter continent: Asia");
+                System.out.println("Enter number: 7");
+                report.cityReportTemplate(db.cityReportSeven(7,"Asia"));// Print report
+                break;
+
+            /*If user choose 14 the system will print the top N populated cities in a region where N is provided by the user*/
+            case 14:
+                System.out.println("The top N populated cities in a region where N is provided by the user");
+                System.out.println("Enter region: Asia");
+                System.out.println("Enter number: 4");
+                report.cityReportTemplate(db.cityReportEight(4,"Eastern Asia"));// Print report
+                break;
+
+            /*If user choose 15 the system will print the top N populated cities in a country where N is provided by the user*/
+            case 15:
+                System.out.println("The top N populated cities in a country where N is provided by the user");
+                System.out.println("Enter country: china");
+                System.out.println("Enter number: 6");
+                report.cityReportTemplate(db.cityReportNine(6,"China"));// Print report
+                break;
+
+            /*If user choose 16 the system will print the top N populated cities in a district where N is provided by the user*/
+            case 16:
+                System.out.println("the top N populated cities in a district where N is provided by the user");
+                System.out.println("Enter district: Hubei");
+                System.out.println("Enter number: 3");
+                report.cityReportTemplate(db.cityReportten(3,"Hubei"));// Print report
+                break;
+
+
             /*If user choose 1 the system will print all the countries in the world
             organised by largest population to smallest*/
             case 1:
@@ -158,12 +277,14 @@ public class App
                 report.countryReportTemplate(db.countryReportSix("Eastern Asia",7));// Print report
                 break;
 
+
             /*If user type invalid input the system will show error*/
             default:
                 System.out.println("Invalid input error.");
                 break;
         }
     }
+
 
 
 }
