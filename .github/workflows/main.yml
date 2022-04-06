@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - feature/additional-report
+      - develop
 jobs:
   UnitTests:
     name: Unit Tests
@@ -66,3 +66,4 @@ jobs:
         run: |
           mvn package -DskipTests
           docker-compose up --abort-on-container-exit
+
