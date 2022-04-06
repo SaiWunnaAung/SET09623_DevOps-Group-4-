@@ -157,7 +157,7 @@ public class App
                 System.out.println("Enter number: 7");
                 report.countryReportTemplate(db.countryReportSix("Eastern Asia",7));// Print report
                 break;
-                
+
             /*If user type invalid input the system will show error*/
             default:
                 System.out.println("Invalid input error.");
