@@ -7,8 +7,7 @@ import java.util.ArrayList;
  * Declaring public class for Report
  */
 public class Report {
-
-
+    
     /**
      * Methods for capitalCityReportTemplate with table formatted
      * @param capitalCity Arraylist
