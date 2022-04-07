@@ -169,7 +169,7 @@ public class App
                 reportTitle="All the cities in a continent organised by largest population to smallest";
                 System.out.println(reportTitle);
                 System.out.println("Enter Continent: Asia");
-                report.printCityReport(db.cityReportTwo("Asia"),"CityReportOne.md",reportTitle);
+                report.printCityReport(db.cityReportTwo("Asia"),"CityReportTwo.md",reportTitle);
                 report.cityReportTemplate(db.cityReportTwo("Asia")); // Print report
                 break;
 
