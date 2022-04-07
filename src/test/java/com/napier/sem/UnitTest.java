@@ -4,7 +4,8 @@ import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import com.napier.sem.model.Country;
 import com.napier.sem.model.Population;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
