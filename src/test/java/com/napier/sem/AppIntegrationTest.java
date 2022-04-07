@@ -1,5 +1,6 @@
 package com.napier.sem;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import com.napier.sem.model.Country;

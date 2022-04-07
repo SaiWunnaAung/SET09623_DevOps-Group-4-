@@ -21,7 +21,7 @@ public class Report {
      */
     public void countryReportTemplate(ArrayList<Country> country){
         //Print report title
-        System.out.format("%-9s %-9s  %-40s  %-30.25s  %-30s  %-20s  %-20s", "NO", "CODE", "NAME", "CONTINENT", "REGION", "POPULATION", "CAPITAL");
+        System.out.format("%-9s %-9s  %-40s  %-30.25s  %-30s  %-20s  %-20s", "No", "CODE", "NAME", "CONTINENT", "REGION", "POPULATION", "CAPITAL");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -42,8 +42,7 @@ public class Report {
             System.out.println("\n");
         }
     }
-
-    public void printCountryReport(ArrayList<Country> country, String filename, String title) {
+    public void printReadMe(ArrayList<Country> country, String filename) {
         // Check employees is not null
         if (country == null) {
             System.out.println("Empty Data");
@@ -51,9 +50,8 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
         // Print header
-        sb.append("| NO | CODE | NAME | CONTINENT | REGION | POPULATION |                    CAPITAL |\r\n");
+        sb.append("| No | Code | Name | CONTINENT | Region | POPULATION |                    CAPITAL |\r\n");
         sb.append("| --- | --- | --- | --- | --- | --- | --- |\r\n");
         // Loop over all employees in the list
         int count = 0;
@@ -100,36 +98,6 @@ public class Report {
         }
     }
 
-    public void printCityReport(ArrayList<City> city, String filename, String title) {
-        // Check employees is not null
-        if (city == null) {
-            System.out.println("Empty Data");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
-        // Print header
-        sb.append("| NO | NAME | COUNTRY | DISTRICT | POPULATION  |\r\n");
-        sb.append("| --- | --- | --- | --- | --- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (City cities:city){
-            count++;
-            if (city == null) continue;
-            sb.append("| " + count + " | " +
-                    cities.getName() + " | " + cities.getCountry() + " | " +
-                    cities.getDistrict() + " | " + cities.getPopulation()  + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     /**
      * Methods for capitalCityReportTemplate with table formatted
@@ -137,7 +105,7 @@ public class Report {
      */
     public void capitalCityReportTemplate(ArrayList<CapitalCity> capitalCity){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-30s  %-20s", "NO",  "NAME", "COUNTRY","POPULATION");
+        System.out.format("%-9s %-30.25s  %-30s  %-20s", "No",  "NAME", "Country","POPULATION");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -156,44 +124,13 @@ public class Report {
         }
     }
 
-    public void printCapitalCityReport(ArrayList<CapitalCity> capitalCity, String filename, String title) {
-        // Check employees is not null
-        if (capitalCity == null) {
-            System.out.println("Empty Data");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
-        // Print header
-        sb.append("| NO | NAME | COUNTRY | POPULATION |\r\n");
-        sb.append("| --- | --- | --- |--- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (CapitalCity capitalCities:capitalCity){
-            count++;
-            if (capitalCity == null) continue;
-            sb.append("| " + count + " | " +
-                    capitalCities.getName() + " | " + capitalCities.getCountry() + " | " +
-                    capitalCities.getPopulation()  + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     /**
      * Methods for populationReportTemplate with table formatted
      * @param population Arraylist
      */
     public void populationReportTemplate(ArrayList<Population> population){
         //Print report title
-        System.out.format("%-9s %-35s  %-35s  %-35s  %-35s  %-35s  %-35s", "NO",  "NAME", "POPULATION", "POPULATION IN CITY", "POPULATION NOT IN CITY", "POPULATION IN CITY PERCENTAGE", "POPULATION NOT IN CITY PERCENTAGE");
+        System.out.format("%-9s %-35s  %-35s  %-35s  %-35s  %-35s  %-35s", "No",  "NAME", "POPULATION", "POPULATION IN CITY", "POPULATION NOT IN CITY", "POPULATION IN CITY PERCENTAGE", "POPULATION NOT IN CITY PERCENTAGE");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -215,44 +152,13 @@ public class Report {
         }
     }
 
-    public void printPopulationReport(ArrayList<Population> population, String filename, String title) {
-        // Check employees is not null
-        if (population == null) {
-            System.out.println("Empty Data");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
-        // Print header
-        sb.append("| NO | NAME | POPULATION | POPULATION IN CITY | POPULATION NOT IN CITY | POPULATION IN CITY PERCENTAGE | POPULATION NOT IN CITY |\r\n");
-        sb.append("| --- | --- |--- |--- |--- | --- |--- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (Population populations:population){
-            count++;
-            if (population == null) continue;
-            sb.append("| " + count + " | " +
-                    populations.getName() + " | " + populations.getPopulation() + " | " + populations.getPopInCity() + " | "+ populations.getPopNotInCity() + " | "+ populations.getPercentagePopulationInCities() + " | " +
-                    populations.getPercentagePopulationNotInCities()  + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     /**
      * Methods for simplePopulationReportTemplate with table formatted
      * @param population Arraylist
      */
     public void simplePopulationReportTemplate(ArrayList<Population> population){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-20s", "NO",  "NAME", "POPULATION");
+        System.out.format("%-9s %-30.25s  %-20s", "No",  "NAME", "POPULATION");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -270,44 +176,13 @@ public class Report {
         }
     }
 
-    public void printSimplePopulationReport(ArrayList<Population> population, String filename, String title) {
-        // Check employees is not null
-        if (population == null) {
-            System.out.println("Empty Data");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
-        // Print header
-        sb.append("| NO | NAME | POPULATION |\r\n");
-        sb.append("| --- | --- |--- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (Population populations:population){
-            count++;
-            if (population == null) continue;
-            sb.append("| " + count + " | " +
-                    populations.getName() + " | "+
-                    populations.getPopulation()  + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     /**
      * Methods for advancePopulationReportTemplate with table formatted
      * @param population Arraylist
      */
     public void advancePopulationReportTemplate(ArrayList<Population> population){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-37.25s  %-20s", "NO",  "LANGUAGE NAME", "POPULATION NUMBER", "POPULATION PERCENTAGE (%)");
+        System.out.format("%-9s %-30.25s  %-37.25s  %-20s", "No",  "LANGUAGE NAME", "POPULATION NUMBER", "POPULATION PERCENTAGE (%)");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -326,35 +201,5 @@ public class Report {
         }
     }
 
-    public void printAdvancePopulationReport(ArrayList<Population> population, String filename, String title) {
-        // Check employees is not null
-        if (population == null) {
-            System.out.println("Empty Data");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("# "+title+"\n");
-        // Print header
-        sb.append("| NO | LANGUAGE NAME | POPULATION NUMBER | POPULATION PERCENTAGE (%) |\r\n");
-        sb.append("| --- | --- |--- |--- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (Population populations:population){
-            count++;
-            if (population == null) continue;
-            sb.append("| " + count + " | " +
-                    populations.getName() + " | "+
-                    populations.getPopulation()  + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 }

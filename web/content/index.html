@@ -1,0 +1,383 @@
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .sidenav {
+        height: 50%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .table
+    {
+        width: 80%;
+        overflow-x: hidden;
+        height: 50%;
+    }
+
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="rheader text-center text-primary">Please Click to View Report.</h2>
+        </div>
+    </div>
+    <div class="row headerContainer" >
+        <div class="col-md-4"></div>
+        <div class="col-md-4 ">
+            <br>
+            <input type="text" class="form-control" id="txt_name" placeholder="Enter Name">
+            <br>
+            <input type="text" class="form-control" id="txt_limit" placeholder="Enter Limit">
+        </div>
+        <div class="col-md-4">
+            <br><br>
+            <button class="btn btn-primary" id="btn_search" onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-2 sidenav">
+            <ul class="list-group">
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportOne',0,'0',1)">
+                Report 1
+                </li>
+
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportTwo',1,'n',2)">
+                Report 2
+                </li>
+
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportThree',1,'n',3)">
+                    Report 3
+                </li>
+
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportFour',1,'l',4)">
+                    Report 4
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportFive',2,'2',5)">
+                    Report 5
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('countryReportSix',2,'2',6)">
+                    Report 6
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportOne',0,'0',7)">
+                    Report 7
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportTwo',1,'n',8)">
+                    Report 8
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportThree',1,'n',9)">
+                    Report 9                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportFour',1,'n',10)">
+                    Report 10
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportFive',1,'n',11)">
+                    Report 11
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportSix',1,'l',12)">
+                    Report 12
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportSeven',2,'2',13)">
+                    Report 13
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportEight',2,'2',14)">
+                    Report 14
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportNine',2,'2',15)">
+                    Report 15
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('cityReportten',2,'2',16)">
+                    Report 16
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportOne',0,'0',17)">
+                    Report 17
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportTwo',1,'n',18)">
+                    Report 18
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportThree',1,'n',19)">
+                    Report 19
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportFour',1,'l',20)">
+                    Report 20
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportFive',2,'2',21)">
+                    Report 21
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('capitalCityReportSix',2,'2',22)">
+                    Report 22
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('populationReportOne',0,'0',23)">
+                    Report 23
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('populationReportTwo',0,'0',24)">
+                    Report 24
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('populationReportThree',0,'0',25)">
+                    Report 25
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportOne',0,'0',26)">
+                    Report 26
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportTwo',1,'n',27)">
+                    Report 27
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportThree',1,'n',28)">
+                    Report 28
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportFour',1,'n',29)">
+                    Report 29
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportFive',1,'n',30)">
+                    Report 30
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportSix',1,'n',31)">
+                    Report 31
+                </li>
+                <li class="list-group-item" style="cursor: pointer"
+                    onclick="submit('additionalReportSeven',0,'0',32)">
+                    Report 32
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-md-10 showData table">
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+<script>
+    var path = null;
+    var pcount = null;
+    var ptype = null;
+    $( document ).ready(function() {
+        disable();
+        });
+
+   function submit(parameter, param_count,param_type,item_id) {
+       disable();
+       clear();
+       path = parameter;
+       pcount = param_count;
+       ptype = param_type;
+       $('.rheader').text(getTitle(item_id));
+       if (param_count == 1){
+        if (param_type == "n"){
+            $('#txt_name').removeAttr('disabled');
+
+        }else{
+            $('#txt_limit').removeAttr('disabled');
+        }
+           $('#btn_search').removeAttr('disabled');
+           $(".showData").html(null);
+       }
+       else if (param_count == 2){
+           $('#txt_name').removeAttr('disabled');
+           $('#txt_limit').removeAttr('disabled');
+           $('#btn_search').removeAttr('disabled');
+           $(".showData").html(null);
+       }else if (param_count == 0){
+           loadData(parameter);
+           disable();
+       }
+
+// disable();
+   }
+
+   function getTitle(id) {
+       let report_title = null;
+       if (id == 1){
+           report_title = "All the countries in the world organised by largest population to smallest.";
+       }else if (id == 2){
+           report_title = "All the countries in a continent organised by largest population to smallest.";
+       }else if (id == 3){
+           report_title = "All the countries in a region organised by largest population to smallest.";
+       }else if (id == 4){
+           report_title = "The top N populated countries in the world where N is provided by the user.";
+       }else if (id == 5){
+           report_title = "The top N populated countries in a continent where N is provided by the user.";
+       }else if (id == 6){
+           report_title = "The top N populated countries in a region where N is provided by the user.";
+       }else if (id == 7){
+           report_title = "All the cities in the world organised by largest population to smallest.";
+       }else if (id == 8){
+           report_title = "All the cities in a continent organised by largest population to smallest.";
+       }else if (id == 9){
+           report_title = "All the cities in a region organised by largest population to smallest.";
+       }else if (id == 10){
+           report_title = "All the cities in a country organised by largest population to smallest.";
+       }else if (id == 11){
+           report_title = "All the cities in a district organised by largest population to smallest.";
+       }else if (id == 12){
+           report_title = "The top N populated cities in the world where N is provided by the user.";
+       }else if (id == 13){
+           report_title = "The top N populated cities in a continent where N is provided by the user.";
+       }else if (id == 14){
+           report_title = "The top N populated cities in a region where N is provided by the user.";
+       }else if (id == 15){
+           report_title = "The top N populated cities in a country where N is provided by the user.";
+       }else if (id == 16){
+           report_title = "The top N populated cities in a district where N is provided by the user.";
+       }else if (id == 17){
+           report_title = "All the capital cities in the world organised by largest population to smallest.";
+       }else if (id == 18){
+           report_title = "All the capital cities in a continent organised by largest population to smallest.";
+       }else if (id == 19){
+           report_title = "All the capital cities in a region organised by largest to smallest.";
+       }else if (id == 20){
+           report_title = "The top N populated capital cities in the world where N is provided by the user.";
+       }else if (id == 21){
+           report_title = "The top N populated capital cities in a continent where N is provided by the user.";
+       }else if (id == 22){
+           report_title = "The top N populated capital cities in a region where N is provided by the user.";
+       }else if (id == 23){
+           report_title = "The population of people, people living in cities, and people not living in cities in each continent.";
+       }else if (id == 24){
+           report_title = "The population of people, people living in cities, and people not living in cities in each region.";
+       }else if (id == 25){
+           report_title = "The population of people, people living in cities, and people not living in cities in each country.";
+       }else if (id == 26){
+           report_title = "The population of the world.";
+       }else if (id == 27){
+           report_title = "The population of a continent.";
+       }else if (id == 28){
+           report_title = "The population of a region.";
+       }else if (id == 29){
+           report_title = "The population of a country.";
+       }else if (id == 30){
+           report_title = "The population of a district.";
+       }else if (id == 31){
+           report_title = "The population of a city.";
+       }else if (id == 32){
+           report_title = "The number of people who speak the Chinese,English,Hindi,Spanish,Arabic languages from greatest number to smallest, including the percentage of the world population.";
+       }
+       return report_title;
+   }
+
+    function clear() {
+        $('#txt_name').val('');
+        $('#txt_limit').val('');
+    }
+    function search() {
+        let name = $('#txt_name').val();
+        let limit =  $('#txt_limit').val();
+        if (pcount == 2){
+            loadData(path+"?name="+name+"&limit="+limit);
+        }else if (pcount == 1){
+            if (ptype == "n"){
+                loadData(path+"?name="+name);
+            }else{
+                loadData(path+"?limit="+limit);
+            }
+        }
+    }
+   function disable() {
+       $('#txt_name').attr('disabled', 'disabled');
+       $('#txt_limit').attr('disabled', 'disabled');
+       $('#btn_search').attr('disabled', 'disabled');
+   }
+   function loadData(param) {
+       var URL = "http://" + window.location.hostname + "/app/"+param;
+       var col = [];
+       $.getJSON(URL, function(data) {
+           for (var i = 0; i < data.length; i++) {
+               for (var key in data[i]) {
+                   if (col.indexOf(key) === -1) {
+                       col.push(key);
+                   }
+               }
+           }
+           // CREATE DYNAMIC TABLE.
+           var table = document.createElement("table");
+           table.className = "table table-bordered";
+           // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+           var tr = table.insertRow(-1);                   // TABLE ROW.
+           for (var i = 0; i < col.length; i++) {
+               var th = document.createElement("th");      // TABLE HEADER.
+               th.innerHTML = col[i].toUpperCase();
+               tr.appendChild(th);
+           }
+
+           // ADD JSON DATA TO THE TABLE AS ROWS.
+           for (var i = 0; i < data.length; i++) {
+               tr = table.insertRow(-1);
+               for (var j = 0; j < col.length; j++) {
+                   var tabCell = tr.insertCell(-1);
+                   tabCell.innerHTML = data[i][col[j]];
+               }
+           }
+           $(".showData").html(table);
+       });
+   }
+
+</script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+
+<!--    <title>Title2</title>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+
+<!--</head>-->
+
+<!--<body>-->
+<!--<h1>Hello World9</h1>-->
+<!--<div class="mypanel"></div>-->
+<!--</body>-->
+
+<!--<script>-->
+
+<!--    var URL = "https://" + window.location.hostname + "/app/greeting";-->
+<!--    $.getJSON(URL, function(data) {-->
+<!--        var text = `Date: ${data.content}`-->
+<!--        $(".mypanel").html(text);-->
+<!--    });-->
+<!--</script>-->
+
+<!--</html>-->

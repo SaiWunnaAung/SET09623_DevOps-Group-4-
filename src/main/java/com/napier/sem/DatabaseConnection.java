@@ -1,8 +1,11 @@
 package com.napier.sem;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import com.napier.sem.model.Country;
 import com.napier.sem.model.Population;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,6 +13,7 @@ import java.util.ArrayList;
 /**
  * Declaring public class for DatabaseConnection
  */
+
 public class DatabaseConnection {
     /**
      * Create Database Connection object
@@ -76,6 +80,10 @@ public class DatabaseConnection {
         }
     }
 
+    private long counter = 0;
+    private static final String template = "Hello, %s!";
+
+
     /**
      * Methods for retrieve data for CountryReportOne
      * @return countries ArrayList
@@ -107,6 +115,8 @@ public class DatabaseConnection {
             // Add country object in countries array list
             countries.add(country);
         }
+
+
         // Return countries array list
         return countries;
     }
