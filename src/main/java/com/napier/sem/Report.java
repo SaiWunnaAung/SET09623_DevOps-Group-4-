@@ -51,7 +51,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | CODE | NAME | CONTINENT | REGION | POPULATION |                    CAPITAL |\r\n");
         sb.append("| --- | --- | --- | --- | --- | --- | --- |\r\n");
@@ -108,7 +108,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | NAME | COUNTRY | DISTRICT | POPULATION  |\r\n");
         sb.append("| --- | --- | --- | --- | --- |\r\n");
@@ -164,7 +164,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | NAME | COUNTRY | POPULATION |\r\n");
         sb.append("| --- | --- | --- |--- |\r\n");
@@ -223,7 +223,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | NAME | POPULATION | POPULATION IN CITY | POPULATION NOT IN CITY | POPULATION IN CITY PERCENTAGE | POPULATION NOT IN CITY |\r\n");
         sb.append("| --- | --- |--- |--- |--- | --- |--- |\r\n");
@@ -278,7 +278,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | NAME | POPULATION |\r\n");
         sb.append("| --- | --- |--- |\r\n");
@@ -334,7 +334,7 @@ public class Report {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("#"+title+"\n");
+        sb.append("# "+title+"\n");
         // Print header
         sb.append("| NO | LANGUAGE NAME | POPULATION NUMBER | POPULATION PERCENTAGE (%) |\r\n");
         sb.append("| --- | --- |--- |--- |\r\n");
