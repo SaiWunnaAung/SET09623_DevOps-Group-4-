@@ -1,4 +1,4 @@
-#The top N populated countries in a region where N is provided by the user
+# The top N populated countries in a region where N is provided by the user
 | NO | CODE | NAME | CONTINENT | REGION | POPULATION |                    CAPITAL |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | CHN | China | Asia | Eastern Asia | 1277558000 | Peking |

@@ -1,4 +1,4 @@
-#The population of people, people living in cities, and people not living in cities in each continent
+# The population of people, people living in cities, and people not living in cities in each continent
 | NO | NAME | POPULATION | POPULATION IN CITY | POPULATION NOT IN CITY | POPULATION IN CITY PERCENTAGE | POPULATION NOT IN CITY |
 | --- | --- |--- |--- |--- | --- |--- |
 | 1 | North America | 482993000 | 168250381 | 314742619 | 34.834999084472656 | 65.16500091552734 |

@@ -1,4 +1,4 @@
-#All the capital cities in a continent organised by largest population to smallest
+# All the capital cities in a continent organised by largest population to smallest
 | NO | NAME | COUNTRY | POPULATION |
 | --- | --- | --- |--- |
 | 1 | Seoul | South Korea | 9981619 |

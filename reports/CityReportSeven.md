@@ -1,4 +1,4 @@
-#The top N populated cities in a continent
+# The top N populated cities in a continent
 | NO | NAME | COUNTRY | DISTRICT | POPULATION  |
 | --- | --- | --- | --- | --- |
 | 1 | Mumbai (Bombay) | India | Maharashtra | 10500000 |

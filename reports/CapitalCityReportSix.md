@@ -1,4 +1,4 @@
-#The top N populated capital cities in a region where N is provided by the user
+# The top N populated capital cities in a region where N is provided by the user
 | NO | NAME | COUNTRY | POPULATION |
 | --- | --- | --- |--- |
 | 1 | Washington | United States | 572059 |

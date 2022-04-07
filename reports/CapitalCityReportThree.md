@@ -1,4 +1,4 @@
-#All the capital cities in a region organised by largest to smallest
+# All the capital cities in a region organised by largest to smallest
 | NO | NAME | COUNTRY | POPULATION |
 | --- | --- | --- |--- |
 | 1 | Lima | Peru | 6464693 |

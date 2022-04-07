@@ -1,4 +1,4 @@
-#The number of people who speak Chinese, English, Hindi, Spanish or Arabic in the world.
+# The number of people who speak Chinese, English, Hindi, Spanish or Arabic in the world.
 | NO | LANGUAGE NAME | POPULATION NUMBER | POPULATION PERCENTAGE (%) |
 | --- | --- |--- |--- |
 | 1 | Chinese | 119184353900 |

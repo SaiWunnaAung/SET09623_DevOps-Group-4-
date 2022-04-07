@@ -1,4 +1,4 @@
-#the top N populated cities in a district where N is provided by the user
+# the top N populated cities in a district where N is provided by the user
 | NO | NAME | COUNTRY | DISTRICT | POPULATION  |
 | --- | --- | --- | --- | --- |
 | 1 | Wuhan | China | Hubei | 4344600 |

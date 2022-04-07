@@ -1,4 +1,4 @@
-#The population of people, people living in cities, and people not living in cities in each country
+# The population of people, people living in cities, and people not living in cities in each country
 | NO | NAME | POPULATION | POPULATION IN CITY | POPULATION NOT IN CITY | POPULATION IN CITY PERCENTAGE | POPULATION NOT IN CITY |
 | --- | --- |--- |--- |--- | --- |--- |
 | 1 | Afghanistan | 22720000 | 2332100 | 20387900 | 10.26449966430664 | 89.7354965209961 |

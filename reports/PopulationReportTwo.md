@@ -1,4 +1,4 @@
-#The population of people, people living in cities, and people not living in cities in each region
+# The population of people, people living in cities, and people not living in cities in each region
 | NO | NAME | POPULATION | POPULATION IN CITY | POPULATION NOT IN CITY | POPULATION IN CITY PERCENTAGE | POPULATION NOT IN CITY |
 | --- | --- |--- |--- |--- | --- |--- |
 | 1 | Caribbean | 38140000 | 11067550 | 27072450 | 29.018199920654297 | 70.98179626464844 |

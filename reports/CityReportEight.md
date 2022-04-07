@@ -1,4 +1,4 @@
-#The top N populated cities in a region where N is provided by the user
+# The top N populated cities in a region where N is provided by the user
 | NO | NAME | COUNTRY | DISTRICT | POPULATION  |
 | --- | --- | --- | --- | --- |
 | 1 | Seoul | South Korea | Seoul | 9981619 |

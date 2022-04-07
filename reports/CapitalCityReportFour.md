@@ -1,4 +1,4 @@
-#The top N populated capital cities in the world where N is provided by the user
+# The top N populated capital cities in the world where N is provided by the user
 | NO | NAME | COUNTRY | POPULATION |
 | --- | --- | --- |--- |
 | 1 | Seoul | South Korea | 9981619 |
