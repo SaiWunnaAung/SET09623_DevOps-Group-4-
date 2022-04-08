@@ -1,4 +1,4 @@
 ignore:
   - "src/main/java/com/napier/sem/App.java" # because of it has main function
   - "src/main/java/com/napier/sem/config/WebConfiguration.java" # because of it is configuration file
-  - "src/main/java/com/napier/sem/config/JsonConverter.java" # because of it is ulti file
+  - "src/main/java/com/napier/sem/JsonConverter.java" # because of it is ulti file
