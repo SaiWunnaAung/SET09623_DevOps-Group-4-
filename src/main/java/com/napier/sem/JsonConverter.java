@@ -10,6 +10,7 @@ import com.napier.sem.model.Population;
 import java.util.ArrayList;
 
 public class JsonConverter {
+
     public String countryJSON(ArrayList<Country> countries) throws JsonProcessingException {
         String json = new ObjectMapper().writeValueAsString(countries);
         return json;

@@ -318,7 +318,7 @@
        $('#btn_search').attr('disabled', 'disabled');
    }
    function loadData(param) {
-       var URL = "http://" + window.location.hostname + "/app/"+param;
+       var URL = "https://devopsgroup4.azurewebsites.net/"+param;
        var col = [];
        $.getJSON(URL, function(data) {
            for (var i = 0; i < data.length; i++) {

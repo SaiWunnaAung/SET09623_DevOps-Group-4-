@@ -47,8 +47,14 @@ jobs:
           flags: Integration Tests # optional
           verbose: true # optional (default = false)
   build:
-    name: Build Run in Docker and Deploy Release
+    name: Build Docker and Deploy on Azure
+    needs:
+      - UnitTests
+      - IntegrationTests
     runs-on: ubuntu-20.04
+    environment:
+      name: production
+      url: https://devopsgroup4.azurewebsites.net
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -59,10 +65,19 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Package and Run docker compose
+      - name: Build docker compose
         run: |
           mvn package -DskipTests
           docker-compose -f "docker-compose.yml" up -d --build
+      - name: Azure Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Deploy to Azure
+        run: |
+          docker-compose push
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
