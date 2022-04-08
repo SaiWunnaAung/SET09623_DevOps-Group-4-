@@ -3,6 +3,11 @@ import com.napier.sem.model.CapitalCity;
 import com.napier.sem.model.City;
 import com.napier.sem.model.Country;
 import com.napier.sem.model.Population;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -44,7 +49,7 @@ public class Report {
      */
     public void cityReportTemplate(ArrayList<City> city){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-30s  %-20s  %-20s", "No",  "NAME", "CONTINENT", "DISTRICT", "POPULATION");
+        System.out.format("%-9s %-30.25s  %-30s  %-20s  %-20s", "No",  "NAME", "COUNTRY", "DISTRICT", "POPULATION");
         System.out.println("\n");
         // Define counter variable
         int count = 0;
@@ -64,13 +69,14 @@ public class Report {
         }
     }
 
+
     /**
      * Methods for capitalCityReportTemplate with table formatted
      * @param capitalCity Arraylist
      */
     public void capitalCityReportTemplate(ArrayList<CapitalCity> capitalCity){
         //Print report title
-        System.out.format("%-9s %-30.25s  %-30s  %-20s", "No",  "NAME", "CONTINENT","POPULATION");
+        System.out.format("%-9s %-30.25s  %-30s  %-20s", "No",  "NAME", "Country","POPULATION");
         System.out.println("\n");
         // Define counter variable
         int count = 0;

@@ -131,4 +131,5 @@ public class Country {
     public void setCapital(String capital) {
         this.capital = capital;
     }
+
 }
