@@ -21,7 +21,7 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Sprint1
+      label: Sprint
       description: What Sprint1 of our bug found?
       options:
         - Sprint-1
