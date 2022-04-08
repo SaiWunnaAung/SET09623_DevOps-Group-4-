@@ -44,8 +44,6 @@ public class App
     }
     @RequestMapping("/countryReportOne")
     public String countryReportOne() throws SQLException, JsonProcessingException {
-        Report report = new Report();
-        report.printReadMe(db.countryReportOne(),"report.md");
         return jsonConverter.countryJSON(db.countryReportOne());
     }
     @RequestMapping("/countryReportTwo")

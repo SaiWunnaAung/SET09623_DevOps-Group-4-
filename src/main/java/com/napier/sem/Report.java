@@ -42,36 +42,7 @@ public class Report {
             System.out.println("\n");
         }
     }
-    public void printReadMe(ArrayList<Country> country, String filename) {
-        // Check employees is not null
-        if (country == null) {
-            System.out.println("Empty Data");
-            return;
-        }
 
-        StringBuilder sb = new StringBuilder();
-        // Print header
-        sb.append("| No | Code | Name | CONTINENT | Region | POPULATION |                    CAPITAL |\r\n");
-        sb.append("| --- | --- | --- | --- | --- | --- | --- |\r\n");
-        // Loop over all employees in the list
-        int count = 0;
-        for (Country countries:country){
-            count++;
-            if (country == null) continue;
-            sb.append("| " + count + " | " +
-                    countries.getCode() + " | " + countries.getName() + " | " +
-                    countries.getContinent() + " | " + countries.getRegion() + " | "
-                    + countries.getPopulation() + " | " + countries.getCapital() + " |\r\n");
-        }
-        try {
-            new File("./reports/").mkdir();
-            BufferedWriter writer = new BufferedWriter(new FileWriter(new File("./reports/" + filename)));
-            writer.write(sb.toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
     /**
      * Methods for cityReportTemplate with table formatted
      * @param city Arraylist
