@@ -11,10 +11,10 @@
 # Team assessment point
 | Member Name    |Matric No      | Code Review 1 | Code Review 2 | Code Review 3 | Code Review 4 | Final Deliverable |
 |----------------|------|---------------|---------------|---------------|---------------|-------------------|
-| Sai Wanna Aung |40501792   | 34            | 33            | 33            | 34            |  |
-| Aung Khant Min |40501795    | 33            | 34            | 33            | 33            |  |
-| Kyaw Hein      |40501802   | 33            | 33            | 34            | 33            |  |
-| Total          |           | 100           | 100           | 100              | 100           |  |
+| Sai Wanna Aung |40501792   | 0.34          | 0.33            | 0.33            | 0.34            | 0.34              |
+| Aung Khant Min |40501795    | 0.33            | 0.34            | 0.33            | 0.33            | 0.33              |
+| Kyaw Hein      |40501802   | 0.33            | 0.33            | 0.34            | 0.33            | 0.33              |
+| Total          |           | 100           | 100           | 100              | 100           | 100               |
 
 # Badges
 Master Build Status ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/SaiWunnaAung/group4/A%20workflow%20for%20my%20Group4%20App/master)
@@ -29,8 +29,8 @@ Code of Conduct [![Code of Conduct](https://img.shields.io/badge/code%20of-condu
 
 Code Coverage [![codecov](https://codecov.io/gh/SaiWunnaAung/group4/branch/master/graph/badge.svg?token=GR5UHCYCPW)](https://codecov.io/gh/SaiWunnaAung/group4)
 
-<a href="ttps://devopsgroup4.azurewebsites.net" target="_blank">WebLink</a>
-# Bug Reporting System 
+
+# Bug Reporting System
 ![](screenshot/bug_reporting.PNG)
 
 # 32 requirements of 32 have been implemented, which is 100%.
@@ -69,3 +69,9 @@ Code Coverage [![codecov](https://codecov.io/gh/SaiWunnaAung/group4/branch/maste
 | 31 | The population of a city.                                                                                                                                             | Yes | ![](screenshot/AdditionalReportSix.PNG)    |
 | 32 | The number of people who speak the Chinese,English,Hindi,Spanish,Arabic languages from greatest number to smallest, including the percentage of the world population. | Yes | ![](screenshot/AdditionalReportSeven.PNG)  |
 
+# Web App.
+<b>Note</b>: We Shut down server in azure because we use free azure account and have time and resources limitations ,so you cannot view our web app from this weblink
+![](screenshot/screenWebApp.PNG)
+
+<b>Note</b>: If you want to view web app can see in moodle final submission.
+![](screenshot/openWebApp.PNG)
